@@ -31,6 +31,8 @@ public class OrderService {
     }
 
     public void create(Order order) {
+        order.setStatus("In Progress");
+        order.setOrderedAt(OffsetDateTime.now());
         repository.save(order);
     }
 

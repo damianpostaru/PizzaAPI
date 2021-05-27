@@ -12,7 +12,7 @@ import java.time.OffsetDateTime;
 import static org.springframework.http.HttpStatus.CREATED;
 
 @RestController
-@RequestMapping("/api/v1/order")
+@RequestMapping("/order")
 public class OrderController {
 
     OrderService service;
