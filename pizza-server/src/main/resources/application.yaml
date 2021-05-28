@@ -1,0 +1,26 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api/v1
+  error:
+    include-message: ALWAYS
+
+spring:
+  application:
+    name: pizza
+  output:
+    ansi:
+      enabled: ALWAYS
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        default_schema: ${spring.application.name}
+  datasource:
+    username: pizza_server
+    password: n8vN2AJLShW7vhQu27Y
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:5432/inventory
