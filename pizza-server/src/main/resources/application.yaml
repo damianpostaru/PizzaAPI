@@ -21,6 +21,6 @@ spring:
       hibernate:
         default_schema: ${spring.application.name}
   datasource:
-    username:
-    password:
-    url: jdbc:postgresql://localhost:5432/inventory
+    username: pizza_server
+    password: n8vN2AJLShW7vhQu27Y
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:5432/inventory
